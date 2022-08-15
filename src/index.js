@@ -14,10 +14,27 @@ function App() {
     const inputType = 'number';
     const minvalue = 5;
 
+    //style={{
+    //    backgroundColor: 'blue',
+    //    width: '100px',
+    //    height: '100px'
+    //  }}
 
-    return <textarea autoFocus={true} />;
+    // in JSX in-line styles are provided as objects 
+
+    // in jsx the 'class attribute is written as 'className'
+    // return <div className="divider" />
+
+    //return <input spellCheck/>
+
+    // return <input maxlength={5} />
+
+    // return <textarea autoFocus={true} />;
+
     // all prop names follow camelCase
+
     //<input type="number" min={5} max={10} />
+
     //<input style={{ border: '3px solid red' }} type={inputType} min={minvalue} />
 
 
