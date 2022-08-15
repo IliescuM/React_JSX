@@ -1,17 +1,36 @@
+// 1) Import the React and ReactDOM libraries Document Object Model
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// 2) Get a ref to the div with ID root
+const element = document.getElementById('root');
+// 3) Tell React to take control of that element
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(element);
+// 4) Create a component
+function App() {
+    const name = 'Samantha';
+    const age = 23;
+    const inputType = 'number';
+    const minvalue = 5;
+
+
+    return <textarea autoFocus={true} />;
+    // all prop names follow camelCase
+    //<input type="number" min={5} max={10} />
+    //<input style={{ border: '3px solid red' }} type={inputType} min={minvalue} />
+
+
+    // let message = "Bye there!";
+
+    // if (Math.random() > 0.5) {
+    //     message = 'Hello there!';
+    // }
+
+    // return <h1>{message}</h1> 
+
+    // {} refrence a js variable or expression
+    // react cannot show an oject as text 
+}
+// 5) Show the component on the screen.
+root.render(<App />)``
